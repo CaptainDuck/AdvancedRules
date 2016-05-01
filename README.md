@@ -1,5 +1,5 @@
 # AdvancedRules
-The only fully-featured rules plugin you'll every need. (WIP). 
+**_The only fully-featured rules plugin you'll every need. (WIP). _**
 
 ##This plugin is only for PocketMine (MCPE) and third party softwares like [Genisys](https://github.com/iTXTech/Genisys) and/or [ImagicalMine](https://github.com/ImagicalMine/ImagicalMine).
 
@@ -18,9 +18,12 @@ The only fully-featured rules plugin you'll every need. (WIP).
    - [x] staff
    - [x] notes
  
-**_Config Files_**
+**- Config Files:**
 - [ ] Config.yml
  - [ ] Editable Rules
+
+**- Permissions:**
+ - [ ] ar.rules
 
 #Help?
 
