@@ -19,12 +19,8 @@
    - [x] notes
  
 **- Config Files:**
-- [ ] Config.yml
+- [x] Config.yml
  - [ ] Editable Rules
 
 **- Permissions:**
- - [ ] ar.rules
-
-#Help?
-
-**_Yes! im needing help on creating config files for this plugin :D, pls tweet me on twitter @dimay_johanna so we can discuss :D**_
+ - [x] ar.rules

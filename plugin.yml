@@ -1,8 +1,13 @@
 name: AdvancedRules
-main: AdvancedRules\Main.php
+author: CaptainDuck
+main: AdvancedRules\Main
 version: 1.0.0
-api: 1.12.0
+api: [1.12.0, 1.14.0, 1.14.2, 2.0.0]
 commands:
-rules:
-description: "Main Rules Command"
-usage: "/rules <player, premium, staff, notes>"
+    rules:
+        usage: "/rules player|premium|staff|notes"
+        description: "Shows rules for specified group"
+        permission: ar.rules
+permissions:
+    ar.rules:
+        default: true
