@@ -2,7 +2,7 @@
 _**The only fully-featured rules plugin you'll every need. (WIP).**_
 
 Command | Parameters
--------------------
+--------|----------
 /rules | (player, premium, staff, notes)
 
 >_**This plugin is only for PocketMine (MCPE) and third party softwares like [Genisys](https://github.com/iTXTech/Genisys) and/or [ImagicalMine](https://github.com/ImagicalMine/ImagicalMine).**_
