@@ -4,8 +4,9 @@
 ##This plugin is only for PocketMine (MCPE) and third party softwares like [Genisys](https://github.com/iTXTech/Genisys) and/or [ImagicalMine](https://github.com/ImagicalMine/ImagicalMine).
 
 
-> This plugin is Work in Progress (WIP) It means that it is In-Dev, Doesn't work, Limited Features, and Much Errors.
+> This plugin is Work in Progress (WIP) It means that it is In-Dev, Limited Features, and Some Errors.
 
+> Special thanks to TheDragonRing for fixing some lines of code, adding permissions, and adding Rules.yml.
 
 **_Note: This is my very first plugin, feel free to create any issue, suggestion or pull request. Thanks! :D_**
 
