@@ -6,4 +6,7 @@ The only fully-featured rules plugin you'll every need. (WIP).
 #To-Do:
 
 - Commands:
- - /rules <player, premium, staff>
+ - /rules
+  - player
+  - premium
+  - staff
