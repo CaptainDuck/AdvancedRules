@@ -5,7 +5,7 @@ The only fully-featured rules plugin you'll every need. (WIP).
 
 ##To-Do:
 
-###- Commands:
+*- Commands:*
  - /rules
    - player
    - premium
