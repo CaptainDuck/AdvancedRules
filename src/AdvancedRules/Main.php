@@ -1,10 +1,10 @@
  <?php
 
-namespace Example;
+namespace AdvancedRules;
 
 use pocketmine\plugin\PluginBase; 
 
-class Example extends PluginBase{
+class AdvancedRules extends PluginBase{
 }
 public function onLoad(){
 $this->getLogger()->info("onLoad() has been called!");
