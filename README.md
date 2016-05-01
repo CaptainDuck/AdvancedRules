@@ -10,7 +10,8 @@ The only fully-featured rules plugin you'll every need. (WIP).
 ##To-Do:
 
 **- Commands:**
- - /rules
-   - player
-   - premium
-   - staff
+ - [x] /rules
+   - [x] player
+   - [x]premium
+   - [x]staff
+   - [x]notes
