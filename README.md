@@ -1,7 +1,7 @@
 # AdvancedRules
 _**The only fully-featured rules plugin you'll every need. (WIP).**_
 
-###This plugin is only for PocketMine (MCPE) and third party softwares like [Genisys](https://github.com/iTXTech/Genisys) and/or [ImagicalMine](https://github.com/ImagicalMine/ImagicalMine).
+>_**This plugin is only for PocketMine (MCPE) and third party softwares like [Genisys](https://github.com/iTXTech/Genisys) and/or [ImagicalMine](https://github.com/ImagicalMine/ImagicalMine).**_
 
 
 > This plugin is Work in Progress (WIP) It means that it is In-Dev, Limited Features, and Some Errors.
