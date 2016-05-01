@@ -3,16 +3,15 @@
 namespace AdvancedRules\Main;
 
 use pocketmine\plugin\PluginBase; 
+use AdvancedRules\Rules
 
 class AdvancedRules extends PluginBase{
 }
-        public function onLoad(){
-                $this->getLogger()->info("onLoad() AdvancedRules by CaptainDuck has been enabled!");
-        }
-        
         public function onEnable(){
-                $this->getLogger()->info("onEnable() AdvancedRules by CaptainDuck has been enabled!");
-        }
+		              $this->getServer()->getPluginManager()->registerEvents($this, $this);
+		              $this->saveDefaultConfig();
+		              $this->getLogger()->info("AdvancedRules by CaptainDuck enabled!");
         public function onDisable(){ 
+         
                 $this->getLogger()->info("onDisable() AdvancedRules by CaptainDuck has been disabled!");
         }
