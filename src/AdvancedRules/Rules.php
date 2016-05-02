@@ -11,12 +11,11 @@ use pocketmine\Player;
 use pocketmine\command\PluginIdentifiableCommand;
 use AdvancedRules\Main
 
-class Rules extends PluginBase implements Listener{
 class Rules extends Command implements PluginIdentifiableCommand{
 
-  public function __construct(){
+        public function __construct(){
 		$this->plugin = $plugin;
-	parent::__construct("rules", "The list of rules for this server!", "/rules <player, premium, staff, notes>");
+ 	        parent::__construct("rules", "The list of rules for this server!", "/rules <player, premium, staff, notes>");
 	}
 	
 	}
@@ -27,8 +26,8 @@ class Rules extends Command implements PluginIdentifiableCommand{
 			$sender->sendMessage("#3: Be respectful to any staff or others.");
 			$sender->sendMessage("#4: Inappropriate usernames are discouraged..");
 			$sender->sendMessage("If you want to learn more do /rules <player, premium, staff, notes>");
-		}
-  public function execute(CommandSender $sender, $lbl, array $args){
+	}
+        public function execute(CommandSender $sender, $lbl, array $args){
 		if(!isset($args[0]) or strtolower($args[0]) === "notes"){
 		$sender->sendMessage("If you disobey the rules repeatedly, you may suffer from any minor/major punishment (based on the disobeyed rules).");
 		$sender->sendMessage("If you found someone doing this, please contact a staff member to handle this.");
@@ -43,7 +42,7 @@ class Rules extends Command implements PluginIdentifiableCommand{
 			$sender->sendMessage("#4: Inappropriate usernames are discouraged..");
 			$sender->sendMessage("If you want to learn more do /rules <player, premium, staff, notes>");
 		}
-		public function execute(CommandSender $sender, $lbl, array $args){
+	public function execute(CommandSender $sender, $lbl, array $args){
 		if(!isset($args[0]) or strtolower($args[0]) === "staff"){
 			$sender->sendMessage("#1: Dont use any mods or hacks");
 			$sender->sendMessage("#2: No cussing, be kind.");
