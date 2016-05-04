@@ -2,7 +2,7 @@ name: AdvancedRules
 author: CaptainDuck
 main: AdvancedRules\Main
 version: 1.0.0
-api: [1.12.0, 1.14.0, 1.14.2, 2.0.0]
+api: [2.0.0]
 commands:
     rules:
         usage: "/rules player|premium|staff|notes"
