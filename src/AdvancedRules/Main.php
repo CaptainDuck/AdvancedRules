@@ -1,6 +1,6 @@
 <?php
 
-namespace AdvancedRules\Main;
+namespace AdvancedRules;
 use pocketmine\plugin\PluginBase; 
 use AdvancedRules\Rules;
 use pocketmine\utils\Config;
