@@ -1,5 +1,5 @@
 <?php
-namespace AdvancedRules\Rules;
+namespace AdvancedRules;
 
 use pocketmine\utils\TextFormat;
 use pocketmine\plugin\PluginBase;
