@@ -5,7 +5,7 @@ version: 1.0.0
 api: [2.0.0]
 commands:
     rules:
-        usage: "/rules player|premium|staff|notes"
+        usage: "/rules <player, premium, staff, notes>"
         description: "Shows rules for specified group"
         permission: ar.rules
 permissions:
