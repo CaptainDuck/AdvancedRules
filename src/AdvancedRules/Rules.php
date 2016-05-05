@@ -12,14 +12,14 @@ use pocketmine\command\PluginIdentifiableCommand;
 
 class Rules extends Command implements PluginIdentifiableCommand{
 
-        public function __construct(){
-		$this->plugin = $plugin;
- 	        parent::__construct("rules", "The list of rules for this server!", "/rules <player, premium, staff, notes>");
-	}
+        public function onCommand(CommandSender $sender, Command $command, $label, array $args){
+    if(strtolower($command->getName()) === "rules"){
+        
+        return true;
+    }
 	
 	}
-	public function execute(CommandSender $sender, $lbl, array $args){
-		if(!isset($args[0]) or strtolower($args[0]) === "player"){
+	   case player:
 			$sender->sendMessage("#1: Dont use any mods or hacks");
 			$sender->sendMessage("#2: No cussing, be kind.");
 			$sender->sendMessage("#3: Be respectful to any staff or others.");
