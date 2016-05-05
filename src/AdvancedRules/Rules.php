@@ -9,7 +9,6 @@ use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
 use pocketmine\Player;
 use pocketmine\command\PluginIdentifiableCommand;
-use AdvancedRules\Main
 
 class Rules extends Command implements PluginIdentifiableCommand{
 
