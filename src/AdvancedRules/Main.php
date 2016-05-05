@@ -6,7 +6,7 @@ use AdvancedRules\Rules;
 use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
 
-class AdvancedRules extends PluginBase{
+class Main extends PluginBase{
 
     public function onEnable(){
             $this->getServer()->getLogger()->info(TextFormat::BLUE . "AdvancedRules v1.0.0b by CaptainDuck enabled.");
