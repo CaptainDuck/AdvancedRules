@@ -19,7 +19,7 @@ class Rules extends Command implements PluginIdentifiableCommand{
     }
 	
 	}
-	   case player:
+	   if($args[0] == "create") {
                         $sender->sendMessage("§a§l§o>§7>§cRules for Players:§7<§a<")
 			$sender->sendMessage("#1: Dont use any mods or hacks");
 			$sender->sendMessage("#2: No cussing, be kind.");
