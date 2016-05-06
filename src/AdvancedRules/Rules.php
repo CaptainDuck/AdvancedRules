@@ -19,7 +19,11 @@ class Rules extends Command implements PluginIdentifiableCommand{
     }
 	
 	}
-	   if($args[0] == "create") {
+	public function onSCmd(CommandSender $c,$args) {
+		if (count($args) == 0) return false;
+		$scmd = strtolower(array_shift($args));
+		switch($scmd) {
+                  case "player":
                         $sender->sendMessage("§a§l§o>§7>§cRules for Players:§7<§a<")
 			$sender->sendMessage("#1: Dont use any mods or hacks");
 			$sender->sendMessage("#2: No cussing, be kind.");
@@ -27,14 +31,14 @@ class Rules extends Command implements PluginIdentifiableCommand{
 			$sender->sendMessage("#4: Inappropriate usernames are discouraged..");
 			$sender->sendMessage("If you want to learn more do /rules <player, premium, staff, notes>");
 	}
-            case notes:
+                  case "notes":
                         $sender->sendMessage("§a§l§o>§7>§cNotes for the Rules:§7<§a<")
 		        $sender->sendMessage("If you disobey the rules repeatedly, you may suffer from any minor/major punishment (based on the disobeyed rules).");
 		        $sender->sendMessage("If you found someone doing this, please contact a staff member to handle this.");
 		        $sender->sendMessage("All rules in players must be obeyed in all ranks.")
 		return true;
 		}
-	  case premium:
+	        case "premium":
                         $sender->sendMessage("§a§l§o>§7>§cRules for Premium Players:§7<§a<")
 			$sender->sendMessage("#1: Dont use any mods or hacks");
 			$sender->sendMessage("#2: No cussing, be kind.");
@@ -42,7 +46,7 @@ class Rules extends Command implements PluginIdentifiableCommand{
 			$sender->sendMessage("#4: Inappropriate usernames are discouraged..");
 			$sender->sendMessage("If you want to learn more do /rules <player, premium, staff, notes>");
 		}
-	   case staff:
+	       case "staff":
                         $sender->sendMessage("§a§l§o>§7>§cRules for Staff Members:§7<§a<")
 			$sender->sendMessage("#1: Dont use any mods or hacks");
 			$sender->sendMessage("#2: No cussing, be kind.");
