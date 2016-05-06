@@ -1,7 +1,7 @@
 <?php
 
 namespace AdvancedRules;
-use pocketmine\events\Listener;
+use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase; 
 use AdvancedRules\Rules;
 use pocketmine\utils\Config;
