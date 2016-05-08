@@ -4,6 +4,7 @@ namespace AdvancedRules;
 use pocketmine\utils\TextFormat as C;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
+use pocketmine\events\Listener;
 use pocketmine\event\player\PlayerChatEvent;
 use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
