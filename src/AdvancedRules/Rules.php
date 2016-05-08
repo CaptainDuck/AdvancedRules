@@ -35,7 +35,7 @@ class Rules extends Command implements PluginIdentifiableCommand{
 			                        $sender->sendMessage("If you want to learn more do /rules <player, premium, staff, notes>");
 					}
 				}
-                                if($args[0] === "reload"){
+                                if($args[0] === "notes"){
                                           $sender->sendMessage("§a§l§o>§7>§cNotes for the Rules:§7<§a<");
 		                          $sender->sendMessage("If you disobey the rules repeatedly, you may suffer from any minor/major punishment (based on the disobeyed rules).");
 		                          $sender->sendMessage("If you found someone doing this, please contact a staff member to handle this.");
