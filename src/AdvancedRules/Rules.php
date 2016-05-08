@@ -15,7 +15,7 @@ use pocketmine\command\PluginCommand;
 use pocketmine\permission\Permission;
 use pocketmine\command\ConsoleCommandSender;
 
-class Rules extends Command implements PluginIdentifiableCommand{
+class Rules extends Command implements Listener{
 
 	private $plugin;
 	
