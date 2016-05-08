@@ -16,28 +16,30 @@ use pocketmine\command\ConsoleCommandSender;
 
 class Rules extends Command implements PluginIdentifiableCommand{
 
-        public function onCommand(CommandSender $sender, Command $command, $label, array $args){
-    if(strtolower($command->getName()) === "rules"){
-        
-        return true;
-    }
+	private $plugin;
 	
+	public function __construct(Main $plugin){
+		$this->plugin = $plugin;
+
 	}
-	switch ($args[0]){
-                case "player":
-                        $sender->sendMessage("§a§l§o>§7>§cRules for Players:§7<§a<");
-			$sender->sendMessage("#1: Dont use any mods or hacks");
-			$sender->sendMessage("#2: No cussing, be kind.");
-			$sender->sendMessage("#3: Be respectful to any staff and others.");
-			$sender->sendMessage("#4: Inappropriate usernames are discouraged..");
-			$sender->sendMessage("If you want to learn more do /rules <player, premium, staff, notes>");
-                case "notes":
-                        $sender->sendMessage("§a§l§o>§7>§cNotes for the Rules:§7<§a<");
-		        $sender->sendMessage("If you disobey the rules repeatedly, you may suffer from any minor/major punishment (based on the disobeyed rules).");
-		        $sender->sendMessage("If you found someone doing this, please contact a staff member to handle this.");
-		        $sender->sendMessage("All rules in players must be obeyed in all ranks.");
-		        return true;
-		        break;
+	public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
+		if(strtolower($cmd->getName()) === "rules"){
+			if(isset($args[0])){
+				if($args[0] === "player"){
+					if(isset($args[1])){
+                                                $sender->sendMessage("§a§l§o>§7>§cRules for Players:§7<§a<");
+		            	                $sender->sendMessage("#1: Dont use any mods or hacks");
+		                   	        $sender->sendMessage("#2: No cussing, be kind.");
+			                        $sender->sendMessage("#3: Be respectful to any staff and others.");
+			                        $sender->sendMessage("#4: Inappropriate usernames are discouraged..");
+			                        $sender->sendMessage("If you want to learn more do /rules <player, premium, staff, notes>");
+					}
+				}
+                                if($args[0] === "reload"){
+                                          $sender->sendMessage("§a§l§o>§7>§cNotes for the Rules:§7<§a<");
+		                          $sender->sendMessage("If you disobey the rules repeatedly, you may suffer from any minor/major punishment (based on the disobeyed rules).");
+		                          $sender->sendMessage("If you found someone doing this, please contact a staff member to handle this.");
+		                          $sender->sendMessage("All rules in players must be obeyed in all ranks.");
 	        case "premium":
                         $sender->sendMessage("§a§l§o>§7>§cRules for Premium Players:§7<§a<")
 			$sender->sendMessage("#1: Dont use any mods or hacks");
