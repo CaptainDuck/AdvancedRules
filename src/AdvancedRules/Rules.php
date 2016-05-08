@@ -17,6 +17,10 @@ use pocketmine\command\ConsoleCommandSender;
 
 class Rules extends Command implements Listener{
 
+
+    public function onEnable(){
+    	    $this->getServer()->getPluginManager()->registerEvents($this, $this);
+    }
 	private $plugin;
 	
 	public function __construct(Main $plugin){
