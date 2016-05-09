@@ -17,7 +17,7 @@ Command | Parameters
 
 > Special thanks to @TheDragonRing for fixing some lines of code, adding permissions, and adding Rules.yml.
 
-> Special Thanks also to @Vaivez66 for fixing the crash and some lines of code.
+> Special Thanks also to @Sandertv and @Vaivez66 for fixing the crash and some lines of code.
 
 > Note: This Plugin is ONLY written on PHP so, You can't fit your Plugin on some MCPE Server Softwares like [MiNET](https://github.com/NiclasOlofsson/MiNET) Because it is written in C# and [Nukkit](https://github.com/Nukkit/Nukkit) because it is written in Java.
 
