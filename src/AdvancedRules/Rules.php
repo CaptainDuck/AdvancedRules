@@ -62,5 +62,5 @@ class Rules extends Command implements Listener{
 	        $sender->sendMessage("If you want to learn more do /rules <player, premium, staff, notes>");
              }
         }
-   }
+    }
 }
