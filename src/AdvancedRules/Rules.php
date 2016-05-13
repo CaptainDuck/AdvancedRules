@@ -37,8 +37,7 @@ class Rules extends Command implements Listener{
 		$sender->sendMessage("#3: Be respectful to any staff and others.");
 		$sender->sendMessage("#4: Inappropriate usernames are discouraged..");
 		$sender->sendMessage("If you want to learn more do /rules <player, premium, staff, notes>");
-             }
-        }
+            }
             if($args[0] == "notes")
                 $sender->sendMessage("§a§l§o>§7>§cNotes for the Rules:§7<§a<");
 		$sender->sendMessage("If you disobey the rules repeatedly, you may suffer from any minor/major punishment (based on the disobeyed rules).");
@@ -63,4 +62,5 @@ class Rules extends Command implements Listener{
 	        $sender->sendMessage("If you want to learn more do /rules <player, premium, staff, notes>");
              }
         }
-    }
+   }
+}
