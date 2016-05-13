@@ -60,7 +60,7 @@ class Rules extends Command implements Listener{
 		$sender->sendMessage("#4: Inappropriate usernames are discouraged..");
                 $sender->sendMessage("#5: Don't Ban or Kick anyone without any appropriate reason.")
 	        $sender->sendMessage("If you want to learn more do /rules <player, premium, staff, notes>");
-             }
+            }
         }
     }
 }
