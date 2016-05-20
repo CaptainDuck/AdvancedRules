@@ -28,7 +28,13 @@ class Rules extends Command implements Listener{
 
 	}
 	public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
-                if($command->getName() == "rules"){
+                switch($command->getName()){
+                	case rules:
+                		if($sender->hasPermission("rules.command");
+                		$sender->sendMessage("C::RED . "Usage: /rules (player, premium, staff)");
+                		break;
+                		return false;
+                		}
                         if(isset($args[0]));
         	                switch ($args[0]) {
         		                case player:
