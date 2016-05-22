@@ -47,25 +47,25 @@ class Rules extends Command implements Listener{
 		                               return true;
         		                       break;
         		                case premium:
-        		                        $sender->sendMessage("§a§l§o>§7>§cRules for Players:§7<§a<");
-		                                $sender->sendMessage("#1: Dont use any mods or hacks");
-		                                $sender->sendMessage("#2: No cussing, be kind.");
-		                                $sender->sendMessage("#3: Be respectful to any staff and others.");
-		                                $sender->sendMessage("#4: Inappropriate usernames are discouraged..");
-		                                $sender->sendMessage("If you want to learn more do /rules <player, premium, staff, notes>");
-		                                return true;
-		                                break;
+        		                       $sender->sendMessage("§a§l§o>§7>§cRules for Players:§7<§a<");
+		                               $sender->sendMessage("#1: Dont use any mods or hacks");
+		                               $sender->sendMessage("#2: No cussing, be kind.");
+		                               $sender->sendMessage("#3: Be respectful to any staff and others.");
+		                               $sender->sendMessage("#4: Inappropriate usernames are discouraged..");
+		                               $sender->sendMessage("If you want to learn more do /rules <player, premium, staff, notes>");
+		                               return true;
+		                               break;
 		                        case staff:
-		                                $sender->sendMessage("§a§l§o>§7>§cRules for Staff Members:§7<§a<");
-		                                $sender->sendMessage("#1: Dont use any mods or hacks");
-		                                $sender->sendMessage("#2: No cussing, be kind.");
-		                                $sender->sendMessage("#3: Be respectful to any staff and others.");
-		                                $sender->sendMessage("#4: Inappropriate usernames are discouraged..");
-                                                $sender->sendMessage("#5: Don't Ban or Kick anyone without any appropriate reason.")
-	                                        $sender->sendMessage("If you want to learn more do /rules <player, premium, staff, notes>");
-	                                        return true;
-	                                        break;
-                                                }
+		                               $sender->sendMessage("§a§l§o>§7>§cRules for Staff Members:§7<§a<");
+		                               $sender->sendMessage("#1: Dont use any mods or hacks");
+		                               $sender->sendMessage("#2: No cussing, be kind.");
+		                               $sender->sendMessage("#3: Be respectful to any staff and others.");
+		                               $sender->sendMessage("#4: Inappropriate usernames are discouraged..");
+                                               $sender->sendMessage("#5: Don't Ban or Kick anyone without any appropriate reason.")
+	                                       $sender->sendMessage("If you want to learn more do /rules <player, premium, staff, notes>");
+	                                       return true;
+	                                       break;
+                                               }
         	                        }
                                 }
 	                }
