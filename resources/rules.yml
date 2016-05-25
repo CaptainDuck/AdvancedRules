@@ -1,3 +1,21 @@
 ---
+#Editable config for AdvancedRules
+#Player Rules
+ar1: "Dont use any mods or hacks."
+ar2: "No cussing, be kind."
+ar3: "Be respectful to any staff and others."
+ar4: "Inappropriate usernames are discouraged.."
 
+#Premium Rules
+ar5: "Dont use any mods or hacks."
+ar6: "No cussing, be kind."
+ar7: "Be respectful to any staff and others."
+ar8: "Inappropriate usernames are discouraged.."
+
+#Staff Rules
+ar9: "Dont use any mods or hacks."
+ar10: "No cussing, be kind."
+ar11: "Be respectful to any staff and others."
+ar12: "Inappropriate usernames are discouraged.."
+ar13: "Don't Ban or Kick anyone without any appropriate reason."
 ...
