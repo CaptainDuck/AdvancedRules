@@ -30,8 +30,8 @@ class Rules extends Command implements Listener{
 	public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
                 switch($command->getName()){
                 	case rules:
-                		if($sender->hasPermission("rules.command");
-                		$sender->sendMessage("C::RED . "Usage: /rules (player, premium, staff)");
+                            if($sender->hasPermission("rules.command"))
+                		$sender->sendMessage(C::RED . "Usage: /rules (player, premium, staff)");
                 		break;
                 		return false;
                 		}
@@ -61,7 +61,7 @@ class Rules extends Command implements Listener{
 		                               $sender->sendMessage("#2: No cussing, be kind.");
 		                               $sender->sendMessage("#3: Be respectful to any staff and others.");
 		                               $sender->sendMessage("#4: Inappropriate usernames are discouraged..");
-                                               $sender->sendMessage("#5: Don't Ban or Kick anyone without any appropriate reason.")
+                                               $sender->sendMessage("#5: Don't Ban or Kick anyone without any appropriate reason.");
 	                                       $sender->sendMessage("If you want to learn more do /rules <player, premium, staff, notes>");
 	                                       return true;
 	                                       break;
