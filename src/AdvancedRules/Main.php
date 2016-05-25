@@ -13,7 +13,7 @@ class Main extends PluginBase implements Listener {
     	    $this->getServer()->getPluginManager()->registerEvents($this, $this);
             $this->getServer()->getLogger()->info(TextFormat::BLUE . "AdvancedRules v1.0.0b by CaptainDuck enabled.");
             $this->saveResource("rules.yml");
-            $config = new Config($this->getDataFolder . "rules.yml", Config::YAML);
+            $config = new Config($this->getDataFolder() . "rules.yml", Config::YAML);
             $config->save();
     }
 
