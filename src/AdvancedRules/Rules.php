@@ -28,7 +28,7 @@ class Rules extends Command implements Listener{
 
 	}
 	public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
-                switch($command->getName()){
+                switch($cmd->getName()){
                 	case rules:
                             if($sender->hasPermission("ar.rules"))
                 		$sender->sendMessage(C::RED . "Usage: /rules (player, premium, staff)");
