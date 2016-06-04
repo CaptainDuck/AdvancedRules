@@ -4,6 +4,8 @@ namespace AdvancedRules;
 
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase; 
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
 use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
 
@@ -17,7 +19,7 @@ class Main extends PluginBase implements Listener{
             $config->save();
     }
     public function onDisable(){
-	$this->getServer()->getLogger()->info(TextFormat::RED ."AdvancedRules disabled! :o");
+	$this->getServer()->getLogger()->info(TextFormat::GRAY . ">" . TextFormat::RED . "RED" . "AdvancedRules v1.0.0b disabled");
     }
     public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
             switch($cmd->getName()){
