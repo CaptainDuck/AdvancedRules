@@ -15,7 +15,6 @@ class Main extends PluginBase implements Listener{
     	    $this->getServer()->getPluginManager()->registerEvents($this, $this);
             $this->getServer()->getLogger()->info(TextFormat::BLUE . "AdvancedRules v1.0.0b by CaptainDuck enabled.");
             $this->saveResource("rules.yml");
-            $config = new Config($this->getDataFolder() . "rules.yml", Config::YAML);
             $config->save();
     }
     public function onDisable(){
@@ -32,7 +31,7 @@ class Main extends PluginBase implements Listener{
             if(isset($args[0])){;
         	switch($args[0]){
         	    case "player":
-                        if($sender->hasPermission("ar.player")){
+                        if($sender->hasPermission("ar.rules.player")){
         		    $sender->sendMessage("§a§l§o>§7>§cRules for Players:§7<§a<");
 		            $sender->sendMessage("#1:". $this->getConfig()->get("ar1"));
 	              	    $sender->sendMessage("#2:". $this->getConfig()->get("ar2"));
@@ -43,7 +42,7 @@ class Main extends PluginBase implements Listener{
         		    break;
                         }
         	    case "premium":
-                        if($sender->hasPermission("ar.premium")){
+                        if($sender->hasPermission("ar.rules.premium")){
         		    $sender->sendMessage("§a§l§o>§7>§cRules for Players:§7<§a<");
 		            $sender->sendMessage("#1:". $this->getConfig()->get("ar5"));
 	              	    $sender->sendMessage("#2:". $this->getConfig()->get("ar6"));
@@ -54,7 +53,7 @@ class Main extends PluginBase implements Listener{
 		            break;
                         }
 		    case "staff":
-                        if($sender->hasPermission("ar.staff")){
+                        if($sender->hasPermission("ar.rules.staff")){
 		            $sender->sendMessage("§a§l§o>§7>§cRules for Staff Members:§7<§a<");
 		            $sender->sendMessage("#1:". $this->getConfig()->get("ar9"));
 	              	    $sender->sendMessage("#2:". $this->getConfig()->get("ar10"));
