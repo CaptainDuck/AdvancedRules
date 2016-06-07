@@ -15,10 +15,9 @@ class Main extends PluginBase implements Listener{
     	    $this->getServer()->getPluginManager()->registerEvents($this, $this);
             $this->getServer()->getLogger()->info(TextFormat::BLUE . "AdvancedRules v1.0.0b by CaptainDuck enabled.");
             $this->saveResource("rules.yml");
-            $config->save();
     }
     public function onDisable(){
-	$this->getServer()->getLogger()->info(TextFormat::GRAY . ">" . TextFormat::RED . "RED" . "AdvancedRules v1.0.0b disabled");
+	$this->getServer()->getLogger()->info(TextFormat::GRAY . ">" . TextFormat::RED. "AdvancedRules v1.0.0b disabled! :o");
     }
     public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
         switch($cmd->getName()){
