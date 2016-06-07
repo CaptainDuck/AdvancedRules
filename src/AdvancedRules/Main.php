@@ -5,6 +5,7 @@ namespace AdvancedRules;
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase; 
 use pocketmine\command\Command;
+use pocketmine\permission\Permission;
 use pocketmine\command\CommandSender;
 use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
