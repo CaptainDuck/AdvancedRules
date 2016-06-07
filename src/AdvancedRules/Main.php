@@ -28,6 +28,7 @@ class Main extends PluginBase implements Listener{
                     return true;
                     break;
                 }
+        }
             if(isset($args[0])){;
         	switch($args[0]){
         	    case "player":
@@ -66,6 +67,5 @@ class Main extends PluginBase implements Listener{
                         }
                 }
             }
-        }
     }
 }
