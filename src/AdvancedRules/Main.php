@@ -13,11 +13,11 @@ class Main extends PluginBase implements Listener{
 
     public function onEnable(){
     	    $this->getServer()->getPluginManager()->registerEvents($this, $this);
-            $this->getServer()->getLogger()->info(TextFormat::BLUE . "AdvancedRules v1.0.0b by CaptainDuck enabled.");
-            $this->saveResource("rules.yml");
+            $this->getServer()->getLogger()->info(TextFormat::BLUE. "AdvancedRules v1.0.0b by CaptainDuck enabled.");
+            $this->saveResource("config.yml");
     }
     public function onDisable(){
-	$this->getServer()->getLogger()->info(TextFormat::GRAY . ">" . TextFormat::RED. "AdvancedRules v1.0.0b disabled! :o");
+	$this->getServer()->getLogger()->info(TextFormat::GRAY. "AdvancedRules v1.0.0b disabled! :o");
     }
     public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
         switch($cmd->getName()){
