@@ -28,9 +28,7 @@ class Main extends PluginBase implements Listener{
                     break;
                 }
         }
-            if(isset($args[0])){;
-        	switch($args[0]){
-        	    case "player":
+        if($args[0] == "player") {
                         if($sender->hasPermission("ar.rules.player")){
         		    $sender->sendMessage("§a§l§o>§7>§cRules for Players:§7<§a<");
 		            $sender->sendMessage(C::GRAY."#1:". $this->getConfig()->get("ar1"));
@@ -39,9 +37,9 @@ class Main extends PluginBase implements Listener{
 		            $sender->sendMessage(C::GRAY."#4:". $this->getConfig()->get("ar4"));
 		            $sender->sendMessage(C::GRAY."If you want to learn more do /rules <player, premium, staff, notes>");
 		            return true;
-        		    break;
                         }
-        	    case "premium":
+        }
+        	    if($args[0] == "premium") {
                         if($sender->hasPermission("ar.rules.premium")){
         		    $sender->sendMessage("§a§l§o>§7>§cRules for Players:§7<§a<");
 		            $sender->sendMessage(C::WHITE."#1:". $this->getConfig()->get("ar5"));
@@ -50,9 +48,9 @@ class Main extends PluginBase implements Listener{
 		            $sender->sendMessage(C::WHITE."#4:". $this->getConfig()->get("ar8"));
 		            $sender->sendMessage(C::WHITE."If you want to learn more do /rules <player, premium, staff, notes>");
 		            return true;
-		            break;
                         }
-		    case "staff":
+                    }
+		    if($args[0] == "staff") {
                         if($sender->hasPermission("ar.rules.staff")){
 		            $sender->sendMessage("§a§l§o>§7>§cRules for Staff Members:§7<§a<");
 		            $sender->sendMessage(C::WHITE."#1:". $this->getConfig()->get("ar9"));
@@ -62,9 +60,7 @@ class Main extends PluginBase implements Listener{
                             $sender->sendMessage(C::WHITE."#5:". $this->getConfig()->get("ar13"));
 	                    $sender->sendMessage(C::WHITE."If you want to learn more do /rules <player, premium, staff, notes>");
 	                    return true;
-	                    break;
                         }
-                }
-            }
+                    }
     }
 }
